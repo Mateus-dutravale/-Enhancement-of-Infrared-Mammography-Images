@@ -14,14 +14,14 @@ def carregar_paleta(caminho_paleta):
     
     return np.array(paleta, dtype=np.uint8)
 
-for i in range(2, 101):  # Começa em 1 e vai até 100 (inclusive)
+for i in range(2, 101): 
     # Carregar a imagem original 
     caminho_imagem = f"C:\\Users\\cactu\\Downloads\\lint\\imags_test_doentes\\a ({i}).jpg"
     imagem_original = cv2.imread(caminho_imagem, cv2.IMREAD_GRAYSCALE)
 
     if imagem_original is None:
         print(f"Erro ao carregar a imagem: {caminho_imagem}")
-        continue  # Pula para a próxima iteração se a imagem não for carregada
+        continue 
 
     # Carregar a matriz de calor do arquivo
     caminho_matriz = f"C:\\Users\\cactu\\Downloads\\lint\\imags_test_doentes\\a ({i-1}).txt"
