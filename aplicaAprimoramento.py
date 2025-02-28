@@ -52,12 +52,10 @@ for i in range(2, 101):  # Começa em 1 e vai até 100 (inclusive)
     # Redimensionar a imagem original para o tamanho da matriz de calor
     imagem_original = cv2.resize(imagem_original, (matriz_calor.shape[1], matriz_calor.shape[0]))
 
-    # Converter a imagem original para BGR para sobrepor corretamente
     imagem_original_bgr = cv2.cvtColor(imagem_original, cv2.COLOR_GRAY2BGR)
 
     # Misturar a matriz de calor com a imagem original 
     sobreposicao = cv2.addWeighted(imagem_original_bgr, 0.2, matriz_calor_colorida, 0.8, 0)
 
-    # Salvar a imagem resultante
     caminho_saida = f"C:\\Users\\cactu\\PROJETOS\\python\\aprimoramento_projeto\\enhancement_Imags\\Rain\\Rain_{i-1}.jpg"
     cv2.imwrite(caminho_saida, sobreposicao)
