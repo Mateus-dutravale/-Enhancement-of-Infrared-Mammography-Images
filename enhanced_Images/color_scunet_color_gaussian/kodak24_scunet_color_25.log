@@ -1,0 +1,25 @@
+25-03-05 16:11:11.953 : Model path: model_zoo\scunet_color_25.pth
+25-03-05 16:11:11.954 : Params number: 17946072
+25-03-05 16:11:11.954 : model_name:scunet_color_25, image sigma:25
+25-03-05 16:11:11.954 : C:/Users/cactu/PROJETOS/python/test/SCUNet/testsets/real3
+25-03-05 16:11:11.955 :          #Params : 17.9461 [M]
+25-03-05 16:11:18.069 : Rain_1.jpg - PSNR: 35.33 dB; SSIM: 0.8820.
+25-03-05 16:11:23.939 : Rain_10.jpg - PSNR: 36.15 dB; SSIM: 0.8709.
+25-03-05 16:11:30.093 : Rain_11.jpg - PSNR: 35.65 dB; SSIM: 0.8660.
+25-03-05 16:11:36.194 : Rain_12.jpg - PSNR: 35.79 dB; SSIM: 0.8621.
+25-03-05 16:11:42.247 : Rain_13.jpg - PSNR: 35.75 dB; SSIM: 0.8601.
+25-03-05 16:11:48.602 : Rain_14.jpg - PSNR: 35.79 dB; SSIM: 0.8682.
+25-03-05 16:11:54.957 : Rain_15.jpg - PSNR: 36.13 dB; SSIM: 0.8732.
+25-03-05 16:12:09.480 : Rain_16.jpg - PSNR: 35.38 dB; SSIM: 0.8721.
+25-03-05 16:12:15.604 : Rain_17.jpg - PSNR: 35.19 dB; SSIM: 0.8619.
+25-03-05 16:12:32.153 : Rain_18.jpg - PSNR: 35.92 dB; SSIM: 0.8705.
+25-03-05 16:12:50.780 : Rain_19.jpg - PSNR: 35.96 dB; SSIM: 0.8760.
+25-03-05 16:13:09.296 : Rain_2.jpg - PSNR: 35.68 dB; SSIM: 0.8785.
+25-03-05 16:13:27.190 : Rain_3.jpg - PSNR: 35.96 dB; SSIM: 0.8656.
+25-03-05 16:13:45.481 : Rain_4.jpg - PSNR: 35.52 dB; SSIM: 0.8701.
+25-03-05 16:13:54.206 : Rain_5.jpg - PSNR: 35.61 dB; SSIM: 0.8699.
+25-03-05 16:14:02.772 : Rain_6.jpg - PSNR: 35.42 dB; SSIM: 0.8663.
+25-03-05 16:14:22.491 : Rain_7.jpg - PSNR: 35.59 dB; SSIM: 0.8667.
+25-03-05 16:14:41.344 : Rain_8.jpg - PSNR: 36.22 dB; SSIM: 0.8745.
+25-03-05 16:15:00.134 : Rain_9.jpg - PSNR: 35.32 dB; SSIM: 0.8627.
+25-03-05 16:15:00.144 : Average PSNR/SSIM(RGB) - kodak24_scunet_color_25 - PSNR: 35.70 dB; SSIM: 0.8693
