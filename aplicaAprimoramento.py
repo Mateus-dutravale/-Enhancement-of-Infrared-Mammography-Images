@@ -14,7 +14,7 @@ def carregar_paleta(caminho_paleta):
     
     return np.array(paleta, dtype=np.uint8)
 
-for i in range(2, 101): 
+for i in range(2, 21): 
     # Carregar a imagem original 
     caminho_imagem = f"C:\\Users\\cactu\\Downloads\\lint\\imags_test_doentes\\a ({i}).jpg"
     imagem_original = cv2.imread(caminho_imagem, cv2.IMREAD_GRAYSCALE)
@@ -38,6 +38,12 @@ for i in range(2, 101):
     matriz_calor = (matriz_calor - matriz_calor.min()) / (matriz_calor.max() - matriz_calor.min()) * 255
     matriz_calor = matriz_calor.astype(np.uint8)
 
+    # limite do fundo 
+    limite_fundo = 45
+    valor_fundo = 0  
+
+    matriz_calor[matriz_calor < limite_fundo] = valor_fundo
+
     paleta = carregar_paleta("C:\\Users\\cactu\\Downloads\\lint\\normalizações\\Rain.pal")
 
     matriz_calor_normalizada = (matriz_calor / 255.0) * (len(paleta) - 1)
@@ -57,5 +63,5 @@ for i in range(2, 101):
     # Misturar a matriz de calor com a imagem original 
     sobreposicao = cv2.addWeighted(imagem_original_bgr, 0.2, matriz_calor_colorida, 0.8, 0)
 
-    caminho_saida = f"C:\\Users\\cactu\\PROJETOS\\python\\aprimoramento_projeto\\enhancement_Imags\\Rain\\Rain_{i-1}.jpg"
+    caminho_saida = f"C:\\Users\\cactu\\PROJETOS\\python\\aprimoramento_projeto\\processed_Imags\\Rain\\Rain_{i-1}.jpg"
     cv2.imwrite(caminho_saida, sobreposicao)
